@@ -15,10 +15,11 @@ st.set_page_config(
 )
 
 # Retrieve API key from environment variables for security
-API_KEY = os.getenv("GOOGLE_API_KEY")
-
+#API_KEY = os.getenv("GOOGLE_API_KEY")
 # Initialize Google's Gemini-Pro AI model with API key
-gpt.configure(api_key=API_KEY)
+#gpt.configure(api_key=API_KEY)
+fetcheed_api_key = st.secrets["gemini_api_key"]
+gpt.configure(api_key = fetcheed_api_key)
 model = gpt.GenerativeModel('gemini-pro')
 
 # Initialize or retrieve existing chat session from Streamlit's session state
