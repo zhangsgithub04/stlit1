@@ -26,7 +26,7 @@ model = gpt.GenerativeModel('gemini-pro')
 initialize_chat_session(model)
 
 # Main application title display
-st.title("🤖 Linux Lab Generator")
+st.title("🤖 SUNY IITG 24-25 Linux and CyberSecurity Lab Procedure Generator")
 
 # Sidebar implementation for session management
 with st.sidebar:
