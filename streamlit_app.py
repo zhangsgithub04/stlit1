@@ -1,3 +1,12 @@
+import os
+import streamlit as st
+from dotenv import load_dotenv
+import google.generativeai as gpt
+from functions import *
+from authenticator import authenticator
+
+# Load environment variables from .env file for secure API key storage
+load_dotenv()
 # Configure Streamlit page settings for better user interface
 st.set_page_config(
     page_title="Linux Lab Generator",
