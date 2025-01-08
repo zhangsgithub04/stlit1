@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 import datetime
 
 
-MONGODB_URI =st.secrets("MONGODB_URI")
+MONGODB_URI =st.secrets["MONGODB_URI"]
 
 
 load_dotenv()
