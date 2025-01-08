@@ -17,7 +17,7 @@ st.set_page_config(
 
 # Retrieve API key from environment variables for security
 #API_KEY = os.getenv("GOOGLE_API_KEY")
-API_KEY=st.secret("gemini_api_key")
+API_KEY=st.secrets("gemini_api_key")
 # Initialize Google's Gemini-Pro AI model with API key
 gpt.configure(api_key=API_KEY)
 model = gpt.GenerativeModel('gemini-pro')
