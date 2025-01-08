@@ -1,14 +1,12 @@
 import streamlit as st
 from pymongo import MongoClient
-import os
-from dotenv import load_dotenv
 import datetime
 
 
-MONGODB_URI = "mongodb+srv://dbAdmin:admin1@cluster0.iwwoeb1.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
 
-load_dotenv()
+MONGODB_URI = st.secrets["MONGODB_URI"]
+
 
 def get_database():
     client = MongoClient(MONGODB_URI)
