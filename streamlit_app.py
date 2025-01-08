@@ -34,7 +34,7 @@ def main():
     initialize_chat_session(model)
 
     # Main application title display
-    st.title("🤖 Linux Lab Generator")
+    st.title("🤖 IITG Linux and Cybersecurity Lab Generator (2024-2025)")
 
     # Sidebar implementation for session management
     with st.sidebar:
